@@ -88,4 +88,8 @@ class Config {
             setProperty("hibernate.hbm2ddl.auto", "create")
             setProperty("hibernate.show_sql", "true")
         }
+
+    @Bean
+    fun calendar(): Calendar = GregorianCalendar()
+
 }
